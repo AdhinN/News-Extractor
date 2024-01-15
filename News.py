@@ -50,6 +50,3 @@ def extract_names(text):
     most_common_name = Counter(names).most_common(1)[0][0]
     return most_common_name
 
-#Ngonekin ke HTML
-if __name__ == '__main__':
-    app.run(debug=True)
