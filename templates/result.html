@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNN News Extractor Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+        p {
+            padding: 10px;
+            margin: 0;
+        }
+        strong {
+            color: #007BFF;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            padding: 20px;
+            margin: 0;
+        }
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>CNN News Extractor Result</h1>
+        <p><strong>Headline:</strong> {{ output[0] }}</p>
+        <p><strong>Actor:</strong> {{ output[3] }}</p>
+        <p><strong>Location:</strong> {{ output[4] }}</p>
+        <p><strong>Date:</strong> {{ output[1] }}</p>
+        <p><strong>Tag:</strong> {{ output[2] }}</p>
+        <a href="/">Back</a>
+    </form>
+</body>
+</html>
